@@ -11,7 +11,6 @@ const meta: Meta<BrnSelectComponent> = {
 		disabled: false,
 		placeholder: 'Select a timezone',
 		multiple: false,
-		initalValue: '',
 		// @ts-ignore
 		dir: 'ltr',
 	},

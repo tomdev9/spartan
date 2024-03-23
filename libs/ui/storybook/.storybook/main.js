@@ -1,11 +1,15 @@
 const config = {
-	stories: ['../../**/*.stories.@(js|jsx|ts|tsx|mdx)'],
-	addons: ['@storybook/addon-essentials', '@storybook/addon-a11y', '@storybook/addon-styling'],
+	stories: ['../../**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],
+	addons: ['@storybook/addon-essentials', '@storybook/addon-a11y', '@storybook/addon-themes'],
 	framework: {
 		name: '@storybook/angular',
 		options: {},
 	},
-	staticDirs: ['../public'], //👈 Configures the static asset folder in Storybook
+	//👈 Configures the static asset folder in Storybook
+	staticDirs: ['../public'],
+	docs: {
+		autodocs: true,
+	},
 };
 
 export default config;
